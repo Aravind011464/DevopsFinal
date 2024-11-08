@@ -32,7 +32,7 @@ pipeline {
         stage('Build Application') {
             steps {
                 script {
-                    // Run the Docker container to build the application
+                    // Run the Docker container to build the applications
                     docker.image('my-node-app').inside {
                         sh 'npm run build'
                     }
