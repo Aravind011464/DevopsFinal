@@ -21,7 +21,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    // Run the Docker container to execute tests
+                    // Run the Docker container to execute testss
                     docker.image('my-node-app').inside {
                         sh 'npm test'
                     }
